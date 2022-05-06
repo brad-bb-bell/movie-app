@@ -4,3 +4,5 @@ class ActorsController < ApplicationController
     render json: actor.as_json
   end
 end
+
+
