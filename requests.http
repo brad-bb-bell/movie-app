@@ -8,22 +8,23 @@ POST http://localhost:3000/movies/
 Content-Type: application/json
 
 {
-  "title":  "Moonfall",
-  "year": 2021,
-  "plot": "The moon is an alien spacecraft and a moon monster lives inside it and wants to destroy the Earth."
+  "title":  "Anchorman",
+  "year": 2005,
+  "plot": "Ron Burgundy is San Diego's top reporter",
+  "director": "Hollywood Joe"
 }
 
 ### Movie show
 
-GET http://localhost:3000/movies/1
+GET http://localhost:3000/movies/6
 
 ### Movie update
 
-PATCH http://localhost:3000/movies/1
+PATCH http://localhost:3000/movies/6
 Content-Type: application/json
 
 {
-  "plot": "The plot has been updated"
+  "director": "Action Bronson"
 }
 
 ### Movie destroy
