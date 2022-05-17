@@ -7,7 +7,7 @@ class ActorsController < ApplicationController
   def show
     actor_id = params[:id]
     actor = Actor.find_by(id: actor_id)
-    render json: actor.as_json
+    render json: actor.as_json,
   end
 
   def create
@@ -15,12 +15,13 @@ class ActorsController < ApplicationController
       first_name: params["first_name"],
       last_name: params["last_name"],
       known_for: params["known_for"],
+      movie_id: params["movie_id"],
       gender: params["gender"],
-      age: params["age"]
+      age: params["age"],
     )
     if actor.save
       render json: actor.as_json
-    else 
+    else
       render json: { errors: actor.errors.full_messages }, status: :unprocessable_entity
     end
   end
@@ -31,11 +32,12 @@ class ActorsController < ApplicationController
     actor.first_name = params["first_name"] || actor.first_name
     actor.last_name = params["last_name"] || actor.last_name
     actor.known_for = params["known_for"] || actor.known_for
+    actor.movie_id = params["movie_id"] || actor.movie_id
     actor.gender = params["gender"] || actor.gender
     actor.age = params["age"] || actor.age
     if actor.save
       render json: actor.as_json
-    else 
+    else
       render json: { errors: actor.errors.full_messages }, status: :unprocessable_entity
     end
   end
@@ -46,3 +48,4 @@ class ActorsController < ApplicationController
     actor.destroy
     render json: { message: "Actor deleted." }
   end
+end

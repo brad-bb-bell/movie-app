@@ -5,8 +5,7 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-actor = Actor.new({ first_name: "Benedict", last_name: "Cumberbatch", known_for: "Sherlock" })
-actor.save
+Actor.create({ first_name: "Benedict", last_name: "Cumberbatch", known_for: "Sherlock", movie_id: 2 })
 Movie.create(title: "Top Gun", year: 1992, plot: "Maverick and Goose fly American fighter planes and (*spoiler alert*) Goose dies")
 
 # {
