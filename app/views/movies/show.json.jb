@@ -1,0 +1,8 @@
+{
+  id: @movie.id,
+  title: @movie.title,
+  year: @movie.year,
+  director: @movie.director,
+  plot: @movie.plot,
+  genres: @movie.genres,
+}

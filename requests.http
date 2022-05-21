@@ -2,7 +2,7 @@
 
 ### Movie index 
 
-GET http://localhost:3000/movies/
+GET http://localhost:3000/movies.json
 
 ### Movie create
 
@@ -19,7 +19,7 @@ Content-Type: application/json
 
 ### Movie show
 
-GET http://localhost:3000/movies/6
+GET http://localhost:3000/movies/7.json
 
 ### Movie update
 
@@ -33,7 +33,7 @@ Authorization: Bearer {{jwt}}
 
 ### Movie destroy
 
-DELETE http://localhost:3000/movies/1
+DELETE http://localhost:3000/movies/8
 Authorization: Bearer {{jwt}}
 
 ### Actor show
