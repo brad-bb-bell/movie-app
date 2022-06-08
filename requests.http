@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTMyNDA5MzB9.UKZbqH5iqtBXJZvChKuY7sTkKpSHlSG2xq1B11PQskU
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTQ3ODU4OTF9.b1WHbYEV2bYIuZEyPqge58A3UlKuz3KX3hMUmUO3Clc
 
 ### Movie index 
 
@@ -11,7 +11,7 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "title":  "Anchorman",
+  "title":  "Anchorman 2",
   "year": 2005,
   "plot": "Ron Burgundy is San Diego's top reporter",
   "director": "Hollywood Joe"
@@ -59,14 +59,3 @@ Content-Type: application/json
   "email": "test@test.com",
   "password": "password"
 }
-
-# ### Photos create
-# POST http://localhost:3000/photos.json
-# Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjozLCJleHAiOjE2Mjk5OTI4NjR9.G2ExsrDYn3oE0vJkvm4T6Po2GbNpH5cqTEaVPVuK_MA
-# Content-Type: application/json
-
-# {
-#   "name": "Test name",
-#   "width": 640,
-#   "height": 480
-# }
